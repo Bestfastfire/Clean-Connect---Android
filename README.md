@@ -24,13 +24,13 @@ In `onPostListener` will be implemented two methods:
         //0 -> JSONObject -> {"file" : "fileUrl", "upload" : true/false]...
     }
     
-To init **POSTs** or **GETs**:
+# Init **POSTs** or **GETs**:
 
     //Send Request, you can use "this" in last parameter to activities and fragment, it works
     new Send_date(conexao.POST, "post=yourPost" + "&post2=yourPost2...", "tag", this).execute("MY_URL?" + "get=abc");
     new Send_date(conexao.GET, null, "tag", this).execute("MY_URL" + "get=abc");
         
-**Uploads**:
+# Uploads
 
     //Upload any file
     //_You can pass one uploadObj_//
