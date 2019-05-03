@@ -17,21 +17,21 @@ In `onPostListener` will be implemented two methods:
     }
     
 **onUploadListener**:
-
+```
     @Override
     public void onUpload(String tag, JSONArray result) {
         //it return your tag and JSONArray with files states
         //0 -> JSONObject -> {"file" : "fileUrl", "upload" : true/false]...
     }
-    
+```
 # Init **POSTs** or **GETs**:
-
+```
     //Send Request, you can use "this" in last parameter to activities and fragment, it works
     new Send_date(conexao.POST, "post=yourPost" + "&post2=yourPost2...", "tag", this).execute("MY_URL?" + "get=abc");
     new Send_date(conexao.GET, null, "tag", this).execute("MY_URL" + "get=abc");
-        
+```   
 # Uploads
-
+```
     //Upload any file
     //_You can pass one uploadObj_//
     //Last parameter in uploadObj, "delete", is if you want delete file after upload
@@ -42,3 +42,4 @@ In `onPostListener` will be implemented two methods:
     ArrayList<uploadObj> files = new ArrayList<>();
     files.add(new uploadObj("urlFile", "urlToSendFile", false));
     new Upload_file(files, "tag", this).execute("MY_URL");
+```
