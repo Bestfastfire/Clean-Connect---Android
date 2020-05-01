@@ -1,4 +1,4 @@
-# Clean-Connect---Android
+# Clean Connect - Android
 Simple and easy way to make posts, gets and uploads to webservices.
 
 You only need is copy folder **conexao** to your project and implement `onPostListener` to **POSTs** and **GETs** or `onUploadListener` to **Upload** any file.
